@@ -1,0 +1,12 @@
+assume all characters are distinct
+
+base case: when string has length of 1 or 0, return itself
+
+recursive rule: move every character to the first and then do the recursive call on the rest part
+                Ex. |ABCDE|- keep A, do recursive call on BCDE......
+                    |BACDE|- keep B, do recursive call on ACDE......
+                    |     |
+                      /|\
+                       |
+                       |
+           this part can have a for loop               recursive call in for loop
