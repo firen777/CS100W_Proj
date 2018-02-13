@@ -10,3 +10,19 @@ recursive rule: move every character to the first and then do the recursive call
                        |
                        |
            this part can have a for loop               recursive call in for loop
+
+base case: 
+
+public static void permutation(String input) {
+  permutation("", input);
+}
+
+public static void permutation(String prefix, String input) {
+  if (input.length == 0 || input.length == 1)
+  {
+    print("Done");
+    return;
+  } else {
+  //This part need to be done.
+  }
+}
